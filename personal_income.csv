@@ -1,0 +1,53 @@
+GeoFIPS,State,Description,2020,2021,2022,2023
+"""01000""",Alabama,Per capita disposable personal income (dollars) 2/,41836,45186,45251,48163
+"""02000""",Alaska,Per capita disposable personal income (dollars) 2/,57337,60065,62303,65899
+"""04000""",Arizona,Per capita disposable personal income (dollars) 2/,46930,50097,51203,55333
+"""05000""",Arkansas,Per capita disposable personal income (dollars) 2/,42991,46639,46910,49360
+"""06000""",California,Per capita disposable personal income (dollars) 2/,59964,64382,63115,68267
+"""08000""",Colorado,Per capita disposable personal income (dollars) 2/,57094,62483,64803,69353
+"""09000""",Connecticut,Per capita disposable personal income (dollars) 2/,66202,67378,67787,73888
+"""10000""",Delaware,Per capita disposable personal income (dollars) 2/,49250,51075,54362,57800
+"""11000""",District of Columbia,Per capita disposable personal income (dollars) 2/,75310,80246,76700,84161
+"""12000""",Florida,Per capita disposable personal income (dollars) 2/,50311,55476,55857,60397
+"""13000""",Georgia,Per capita disposable personal income (dollars) 2/,46065,49587,48919,51921
+"""15000""",Hawaii ,Per capita disposable personal income (dollars) 2/,50869,53877,53114,57427
+"""16000""",Idaho,Per capita disposable personal income (dollars) 2/,44520,48070,49693,52950
+"""17000""",Illinois,Per capita disposable personal income (dollars) 2/,54421,58602,57721,62317
+"""18000""",Indiana,Per capita disposable personal income (dollars) 2/,46607,50801,51319,53943
+"""19000""",Iowa,Per capita disposable personal income (dollars) 2/,47433,51918,53238,56247
+"""20000""",Kansas,Per capita disposable personal income (dollars) 2/,49426,51785,52742,56940
+"""21000""",Kentucky,Per capita disposable personal income (dollars) 2/,42597,46296,45890,48937
+"""22000""",Louisiana,Per capita disposable personal income (dollars) 2/,46488,50057,49364,52557
+"""23000""",Maine,Per capita disposable personal income (dollars) 2/,48782,52045,52858,56489
+"""24000""",Maryland,Per capita disposable personal income (dollars) 2/,56137,58801,58648,63688
+"""25000""",Massachusetts,Per capita disposable personal income (dollars) 2/,66091,69720,68866,74342
+"""26000""",Michigan,Per capita disposable personal income (dollars) 2/,47545,50175,49696,53246
+"""27000""",Minnesota,Per capita disposable personal income (dollars) 2/,53609,57585,58638,62963
+"""28000""",Mississippi,Per capita disposable personal income (dollars) 2/,39421,42852,42186,44436
+"""29000""",Missouri,Per capita disposable personal income (dollars) 2/,46946,49827,50695,54995
+"""30000""",Montana,Per capita disposable personal income (dollars) 2/,47769,51266,52822,56691
+"""31000""",Nebraska,Per capita disposable personal income (dollars) 2/,51096,55923,56647,61114
+"""32000""",Nevada,Per capita disposable personal income (dollars) 2/,49061,54219,53876,57934
+"""33000""",New Hampshire,Per capita disposable personal income (dollars) 2/,61072,63940,64491,69245
+"""34000""",New Jersey,Per capita disposable personal income (dollars) 2/,62032,65282,64689,69883
+"""35000""",New Mexico,Per capita disposable personal income (dollars) 2/,43092,46912,47271,50029
+"""36000""",New York,Per capita disposable personal income (dollars) 2/,59243,62900,60463,66393
+"""37000""",North Carolina,Per capita disposable personal income (dollars) 2/,46280,50144,50654,53929
+"""38000""",North Dakota,Per capita disposable personal income (dollars) 2/,56029,59804,63367,67093
+"""39000""",Ohio,Per capita disposable personal income (dollars) 2/,47638,50730,50619,54146
+"""40000""",Oklahoma,Per capita disposable personal income (dollars) 2/,46276,50456,50965,53761
+"""41000""",Oregon,Per capita disposable personal income (dollars) 2/,49658,53447,53089,57306
+"""42000""",Pennsylvania,Per capita disposable personal income (dollars) 2/,53885,56282,55624,60071
+"""44000""",Rhode Island,Per capita disposable personal income (dollars) 2/,52707,55913,54687,58735
+"""45000""",South Carolina,Per capita disposable personal income (dollars) 2/,43988,47125,47056,50345
+"""46000""",South Dakota,Per capita disposable personal income (dollars) 2/,54796,59725,61638,64656
+"""47000""",Tennessee,Per capita disposable personal income (dollars) 2/,47843,52047,52540,56041
+"""48000""",Texas,Per capita disposable personal income (dollars) 2/,50296,54722,55733,59422
+"""49000""",Utah,Per capita disposable personal income (dollars) 2/,45643,49587,50999,55371
+"""50000""",Vermont,Per capita disposable personal income (dollars) 2/,52111,54066,54918,59330
+"""51000""",Virginia,Per capita disposable personal income (dollars) 2/,53854,57713,58609,63625
+"""53000""",Washington,Per capita disposable personal income (dollars) 2/,60420,65310,65098,70589
+"""54000""",West Virginia,Per capita disposable personal income (dollars) 2/,41413,44722,45087,48184
+"""55000""",Wisconsin,Per capita disposable personal income (dollars) 2/,49583,53514,53759,57210
+"""56000""",Wyoming,Per capita disposable personal income (dollars) 2/,58622,62015,63301,69039
+"""91000""",New England,Per capita disposable personal income (dollars) 2/,62518,65344,65110,70349
