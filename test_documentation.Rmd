@@ -1,0 +1,31 @@
+---
+title: "Group A"
+output: html_document
+date: "2024-10-15"
+---
+
+## Documentation 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+The data for this project come from ....
+
+
+The statistical model we used to estimate our predictions is this:
+
+```{r cars}
+y <- c(1,2,3,4,5)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
