@@ -2,7 +2,6 @@
 ### POL 683: Midterm Elections Project ###
 ### Model Specifications and Predicted Probs ###
 ### Updates 21 Oct 2024 ###
-### Casas, Lee, Tadele, Yanik Koc
 
 
 
@@ -28,7 +27,7 @@ library(shiny)
 
 
 
-setwd("/Users/aliannacasas/Desktop/Election/Data")
+setwd("~/Library/Mobile Documents/com~apple~CloudDocs/R/POL683/input")
 
 
 finaldata <- read_csv("electionforecast_FINAL.csv")
@@ -174,11 +173,12 @@ write.csv(finaldata, "finaldata_recode.csv")
       religion_evan = mean(religion_evan, na.rm = TRUE),
       .groups = "drop")
   
+  
   # Generate predictions for Trump specification
  
    predict_trump <- predict(trump, newdata = newdata_trump)
   
-  # Combine predictions for republican vote share with new data
+  # Define predictions and print
    
   predictions_rep <- newdata_trump %>%
     mutate(predicted_rep = predict_trump)
@@ -203,11 +203,11 @@ write.csv(finaldata, "finaldata_recode.csv")
       religion_evan = mean(religion_evan, na.rm = TRUE),
       .groups = "drop")
   
-  # Generate predictions for Harris specification
+  # Generate predictions for Harris Specification
   
   predict_harris <- predict(harris_milit, newdata = newdata_harris)
   
-  # Combine predictions for democrats vote share with new data
+  # Define predictions and print
   
   predictions_dem <- newdata_harris %>%
     mutate(predicted_dem = predict_harris)
@@ -220,6 +220,16 @@ write.csv(finaldata, "finaldata_recode.csv")
 ## How does the two-party prediction map onto electoral returns 
   
     # If a candidate gets over 50%, gets electoral college vote. If less than 50%, then not. 
+  
+    winner <- data.frame(state = finaldata$state,
+                         electoral_college = finaldata$electoral_college,
+                         predicted_dem = predictions_dem$predicted_dem,
+                         predicted_rep = predictions_rep$predicted_rep,
+                         winner = ifelse(winner$predicted_dem > winner$predicted_rep, "Harris", "Trump"))
+    
+    harris_votes <- sum(winner$electoral_college[winner$winner == "Harris"], na.rm = TRUE)
+    trump_votes <- sum(winner$electoral_college[winner$winner == "Trump"], na.rm = TRUE)
+  
 
   
     # Excluding Maine and Nebraska (?) 
