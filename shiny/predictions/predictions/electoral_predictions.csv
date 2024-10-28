@@ -1,0 +1,52 @@
+"","state","dif","prediction","NA","Donald Trump","Kamala Harris","electoral_votes","electoral_Trump","electoral_Harris"
+"1","Alabama",NA,"Donald Trump",NA,NA,NA,9,9,0
+"2","Alaska",0.515654475994638,"Donald Trump",NA,49.0271894180777,42.7633517749966,3,3,0
+"3","Arizona",0.501002666283459,"Donald Trump",NA,47.337560092913,46.9364930419172,11,11,0
+"4","Arkansas",NA,"Donald Trump",NA,NA,NA,6,6,0
+"5","California",NA,"Kamala Harris",NA,NA,NA,55,0,55
+"6","Colorado",NA,"Kamala Harris",NA,NA,NA,9,0,9
+"7","Connecticut",NA,"Kamala Harris",NA,NA,NA,7,0,7
+"8","Delaware",NA,"Kamala Harris",NA,NA,NA,3,0,3
+"9","District of Columbia",NA,"Kamala Harris",NA,NA,NA,3,0,3
+"10","Florida",0.506652700890462,"Donald Trump",NA,48.4908947940867,45.8296573875712,29,29,0
+"11","Georgia",0.500402030121219,"Donald Trump",NA,47.4491490066618,47.2883369235187,16,16,0
+"12","Hawaii",NA,"Kamala Harris",NA,NA,NA,4,0,4
+"13","Idaho",NA,"Donald Trump",NA,NA,NA,4,4,0
+"14","Illinois",NA,"Kamala Harris",NA,NA,NA,20,0,20
+"15","Indiana",NA,"Donald Trump",NA,NA,NA,11,11,0
+"16","Iowa",0.510429976268209,"Donald Trump",NA,47.0747513382137,42.9021555428858,6,6,0
+"17","Kansas",NA,"Donald Trump",NA,NA,NA,6,6,0
+"18","Kentucky",NA,"Donald Trump",NA,NA,NA,8,8,0
+"19","Louisiana",NA,"Donald Trump",NA,NA,NA,8,8,0
+"20","Maine",0.475178078498914,"Kamala Harris",NA,41.1744743804596,51.1114115835684,4,0,4
+"21","Maryland",NA,"Kamala Harris",NA,NA,NA,10,0,10
+"22","Massachusetts",NA,"Kamala Harris",NA,NA,NA,11,0,11
+"23","Michigan",0.492369748553308,"Kamala Harris",NA,46.5206130125919,49.5729505517738,16,0,16
+"24","Minnesota",0.485090628451467,"Kamala Harris",NA,43.3603551605538,49.3258722940402,10,0,10
+"25","Mississippi",NA,"Donald Trump",NA,NA,NA,6,6,0
+"26","Missouri",NA,"Donald Trump",NA,NA,NA,10,10,0
+"27","Montana",NA,"Donald Trump",NA,NA,NA,3,3,0
+"28","Nebraska",NA,"Donald Trump",NA,NA,NA,5,5,0
+"29","Nevada",0.499200380873073,"Kamala Harris",NA,47.0851839671894,47.4050318906374,6,0,6
+"30","New Hampshire",0.475415955251848,"Kamala Harris",NA,42.8829385573988,52.7244922311389,4,0,4
+"31","New Jersey",NA,"Kamala Harris",NA,NA,NA,14,0,14
+"32","New Mexico",0.478247453336361,"Kamala Harris",NA,40.61682861169,49.3233429722909,5,0,5
+"33","New York",NA,"Kamala Harris",NA,NA,NA,29,0,29
+"34","North Carolina",0.498359724742999,"Kamala Harris",NA,46.7507532995622,47.4068657560661,15,0,15
+"35","North Dakota",NA,"Donald Trump",NA,NA,NA,3,3,0
+"36","Ohio",0.519693237829127,"Donald Trump",NA,51.4504606880679,43.5690884260677,18,18,0
+"37","Oklahoma",NA,"Donald Trump",NA,NA,NA,7,7,0
+"38","Oregon",0.491118130844283,"Kamala Harris",NA,42.2860151370993,45.839136560467,7,0,7
+"39","Pennsylvania",0.495177678337538,"Kamala Harris",NA,46.5917350450385,48.5207235224597,20,0,20
+"40","Rhode Island",NA,"Kamala Harris",NA,NA,NA,4,0,4
+"41","South Carolina",NA,"Donald Trump",NA,NA,NA,9,9,0
+"42","South Dakota",NA,"Donald Trump",NA,NA,NA,3,3,0
+"43","Tennessee",NA,"Donald Trump",NA,NA,NA,11,11,0
+"44","Texas",0.508993354881018,"Donald Trump",NA,49.6952609853289,46.0975310181718,38,38,0
+"45","Utah",NA,"Donald Trump",NA,NA,NA,6,6,0
+"46","Vermont",NA,"Kamala Harris",NA,NA,NA,3,0,3
+"47","Virginia",0.481265252061601,"Kamala Harris",NA,43.84068871953,51.3380979048115,13,0,13
+"48","Washington",NA,"Kamala Harris",NA,NA,NA,12,0,12
+"49","West Virginia",NA,"Donald Trump",NA,NA,NA,5,5,0
+"50","Wisconsin",0.494081896952412,"Kamala Harris",NA,46.6619986853192,49.0293504604786,10,0,10
+"51","Wyoming",NA,"Donald Trump",NA,NA,NA,3,3,0

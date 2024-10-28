@@ -1,0 +1,255 @@
+---
+title: "Chris's Predictions"
+output: html_document
+date: "2024-10-15"
+---
+
+## Introduction
+
+Below I clean and prepare the data. I ended up just taking the weekly average. I limit the analysis to Trump and Harris, and all polls after 7/21. 
+
+```{r}
+library(dplyr)
+library(lubridate)
+library(knitr)
+
+
+knitr::opts_chunk$set(echo = TRUE)
+poll <- read.csv("~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/president_polls.csv") %>%
+  filter(mdy(end_date) > as.Date("07/21/24", "%m/%d/%y")) 
+
+# Convert all dates to workweeks
+dates = poll$end_date %>% mdy()  
+workweek_start = floor_date(dates, unit = "week", week_start = 1)
+day_start = floor_date(dates, unit = "day")
+poll$day_id = as.integer(factor(day_start))  - 1
+poll$week = as.integer(factor(workweek_start))  - 1
+poll$week_id = workweek_start
+
+poll = poll %>% group_by(state) %>% arrange(end_date) %>%
+  filter(answer %in% c("Harris", "Trump"))  %>%
+  group_by(day_id, state, candidate_name, end_date) %>%
+  filter(state != "") %>%
+  summarize(
+    poll_average = mean(pct, na.rm = TRUE)
+  ) %>%
+  arrange(state, candidate_name)
+
+poll %>% head()
+
+write.csv(poll, file = "~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/shiny/predictions/predictions/poll.csv")
+```
+
+## States over time
+
+
+The statistical model I used to estimate our predictions is this:
+
+```{r}
+poll %>% 
+ggplot(aes(x = as.Date(end_date,  "%m/%d/%y" ), y = poll_average, color = candidate_name)) +
+  geom_jitter(size = 3, alpha = 0.3 ) +
+  geom_smooth(method = "loess", se = FALSE) +  # Add trend lines
+  labs(title = "Poll Averages",
+       x = "Day",
+       y = "Poll Average") +
+  theme_minimal() +
+  theme(legend.position = "none") + 
+    scale_color_manual(values = c("Kamala Harris" = "blue", "Donald Trump" = "red")) 
+  # add dates using end_da
+  
+```
+
+## BRMS
+
+Estimate two models, one for Harris, one for Trump. This type of model is called a latent growth model. Parameters vary across states.
+
+```{r, echo  = FALSE, message = FALSE, warning = FALSE}
+library(brms)
+    model2 <- brms::brm(
+      poll_average ~ day_id + I(day_id^2) + I(day_id^3) +  (1+day_id + I(day_id^2) + I(day_id^3)|state),
+      data = poll %>% filter(candidate_name == "Donald Trump"),
+      family = gaussian(),
+      iter = 1000,
+      chains = 4,
+      cores = getOption("mc.cores", 10),
+    )
+    model1 <- brms::brm(
+      poll_average ~ day_id + I(day_id^2) + I(day_id^3) +  (1+day_id + I(day_id^2) + I(day_id^3)|state),
+      data = poll %>% filter(candidate_name == "Kamala Harris"),
+      family = gaussian(),
+      iter = 1000,
+      chains = 4,
+      cores = getOption("mc.cores", 10),
+    )
+model1
+model2
+
+list(harris = model1, trump =  model2) -> models
+
+save(models, file = "~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/shiny/predictions/predictions/models.rda")
+
+
+```
+
+Here are predictions for both candidates
+
+```{r}
+bind_rows(
+poll %>%
+      tidybayes::add_epred_draws(model2) %>%
+      group_by(day_id, state) %>%
+      summarize(
+        .value = mean(.epred),
+        .lower = quantile(.epred, 0.025),
+        .upper = quantile(.epred, 0.975)
+      ) %>%
+  mutate(candidate_name = "Kamala Harris"),
+poll %>%
+      tidybayes::add_epred_draws(model1) %>%
+      group_by(day_id, state) %>%
+      summarize(
+        .value = mean(.epred),
+        .lower = quantile(.epred, 0.025),
+        .upper = quantile(.epred, 0.975)
+      ) %>%
+  mutate(candidate_name = "Donald Trump")
+) %>%
+ggplot(aes(x = day_id, y = .value, group = state, fill = state)) +
+  facet_wrap(~candidate_name, scales = "free_y") + 
+  geom_line(aes(color = state), size = 1, alpha = 0.3 ) +
+  geom_ribbon(aes(ymin = .lower, ymax = .upper), alpha = 0.1) +
+  labs(title = "Trajectories",
+       x = "Week",
+       y = "Poll Average") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  # range y
+  scale_y_continuous(limits = c(25, 75))
+```
+
+
+## Predictions
+
+
+```{r}
+my_predictions = 
+                    bind_rows(
+                    poll %>%
+                      group_by(state) %>%
+                      #extract max day and add 1
+                      summarize(day_id = max(day_id) + 1) %>%
+                      tidybayes::add_epred_draws(model2) %>%
+                      group_by(state) %>%
+                      # summarize posterior
+                      summarize(
+                        .value = mean(.epred),
+                        .lower = quantile(.epred, 0.025),
+                        .upper = quantile(.epred, 0.975)
+                      ) %>%
+                        mutate(candidate_name = "Donald Trump"),
+                    poll %>%
+                      group_by(state) %>%
+                      #extract max day and add 1
+                      summarize(day_id = max(day_id) + 1) %>%
+                      tidybayes::add_epred_draws(model1) %>%
+                      group_by(state) %>%
+                      # summarize posterior
+                      summarize(
+                        .value = mean(.epred),
+                        .lower = quantile(.epred, 0.025),
+                        .upper = quantile(.epred, 0.975)
+                      ) %>%
+                      mutate(candidate_name = "Kamala Harris") 
+) %>%
+  filter(!stringr::str_detect(state, "CD"))
+```
+
+Here are my predictions:
+```{r}
+# Drop states with large margins; polling is sporadic, and increases the confidence intervals
+my_predictions = my_predictions %>%
+  select(state, candidate_name, .value) %>%
+  tidyr::spread(candidate_name, .value) %>%
+  mutate(margin = `Donald Trump` - `Kamala Harris`) %>%
+  dplyr::right_join(my_predictions, by = "state") %>%
+  filter(abs(margin) < 10)
+head(my_predictions)
+
+```
+
+Here is the total United States, territories, and the District of Columbia, to see what's missing.
+```{r}
+### move to global
+electoral_votes = read.csv("~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/shiny/predictions/predictions/electoral_votes.csv")
+all_states_and_territories <- c(
+  "Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", 
+  "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", 
+  "Georgia", "Guam", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
+  "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", 
+  "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", 
+  "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", 
+  "North Dakota", "Northern Mariana Islands", "Ohio", "Oklahoma", "Oregon", 
+  "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", 
+  "Tennessee", "Texas", "Utah", "Vermont", "Virgin Islands", "Virginia", 
+  "Washington", "West Virginia", "Wisconsin", "Wyoming"
+)
+
+# Create a second vector including the remaining U.S. states and territories
+remaining_states_and_territories <- dplyr::setdiff(all_states_and_territories, 
+                                                   with(my_predictions, unique(state)
+))
+
+trump_states <- c("Alabama", "Alaska", "Arkansas", "Idaho", "Indiana", "Kansas", 
+                  "Kentucky", "Louisiana", "Mississippi", "Missouri", "Montana", 
+                  "Nebraska", "North Dakota", "Oklahoma", "South Carolina", 
+                  "South Dakota", "Tennessee", "Utah", "West Virginia", 
+                  "Wyoming")
+
+harris_states <- c("California", "Colorado", "Connecticut", "Delaware", 
+                   "District of Columbia", "Hawaii", "Illinois", "Maine", 
+                   "Maryland", "Massachusetts", 
+                   "New Hampshire", "New Jersey", "New Mexico", 
+                   "New York", "Oregon", "Rhode Island", "Vermont", 
+                   "Washington")
+
+# Create a data frame with states and their voting preferences
+state_preferences <- data.frame(
+  state = all_states_and_territories,
+  prediction = ifelse(all_states_and_territories %in% trump_states, "Donald Trump", 
+                          ifelse(all_states_and_territories %in% harris_states, "Kamala Harris", NA)),
+  stringsAsFactors = FALSE
+)
+
+# Print the data frame
+states = state_preferences  %>%
+  left_join(my_predictions, by = "state")  %>%
+   mutate(dif = plogis(`Donald Trump`/100 - `Kamala Harris`/100))  %>%
+   select(state, candidate_name, .value, dif, prediction)   %>%
+   pivot_wider(names_from = candidate_name, values_from = `.value`) %>%
+   inner_join(electoral_votes, by = "state") 
+
+for(i in 1:nrow(states)){
+  if(is.na(states$prediction[i])){
+    states$prediction[i] = ifelse(states$`Donald Trump`[i] > states$`Kamala Harris`[i], "Donald Trump", "Kamala Harris")
+  }}
+
+states %>% 
+  mutate(
+    electoral_Trump = ifelse(prediction == "Donald Trump", electoral_votes, 0),
+    electoral_Harris = ifelse(prediction == "Kamala Harris", electoral_votes, 0)
+  ) -> states
+
+ write.csv(states, file = "~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/shiny/predictions/predictions/electoral_predictions.csv")
+
+
+```
+
+
+
+
+
+
+
+
+
