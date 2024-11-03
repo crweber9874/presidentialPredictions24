@@ -12,7 +12,7 @@ Below I clean and prepare the data. I ended up just taking the weekly average. I
 library(dplyr)
 library(lubridate)
 library(knitr)
-
+library(ggplot2)
 
 knitr::opts_chunk$set(echo = TRUE)
 poll <- read.csv("~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/president_polls.csv") %>%
@@ -180,6 +180,7 @@ head(my_predictions)
 
 Here is the total United States, territories, and the District of Columbia, to see what's missing.
 ```{r}
+library(tidyr)
 ### move to global
 electoral_votes = read.csv("~/Dropbox/github_repos/pol683/electionPrediction/presidentialPredictions24/shiny/predictions/predictions/electoral_votes.csv")
 all_states_and_territories <- c(

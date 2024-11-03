@@ -20,6 +20,7 @@ library(sandwich)
 library(ggeffects)
 library(knitr)
 ```
+
 ```{r, results='hide'}
 setwd("~/Library/Mobile Documents/com~apple~CloudDocs/R/POL683/input")
 ```
@@ -27,7 +28,6 @@ setwd("~/Library/Mobile Documents/com~apple~CloudDocs/R/POL683/input")
 ```{r, results='hide'}
 finaldata <- read_csv("electionforecast_FINAL copy.csv")
 ```
-
 
 ## Data
 
@@ -43,7 +43,7 @@ We combined polls from Maine CD-1 and Maine CD-2 into Maine, as well as polls fr
 
 Independent Variables:
 
-- Abortion Feeling Thermometer (mean_abortion):
+-   Abortion Feeling Thermometer (mean_abortion):
 
 The variable `mean_abortion` uses data from the ANES 2024 Pilot Study to measure respondent preferences for abortion policy.
 
@@ -51,24 +51,21 @@ The study asked respondents to place themselves on a scale from 1 to 7, where 1 
 
 We averaged score for each respondent by state.
 
-- Affective Polarization (affectivepolarization): 
+-   Affective Polarization (affectivepolarization):
 
 This variable measures respondents' hostility toward opposing parties and favorability toward their supporting parties.
 
 It's calculated by subtracting feeling thermometer ratings for the Republican party (feelingtherm_rep) from those for the Democratic party (feelingtherm_dem).
 
-
-- Campaign Finances Ratio (disburse_ratio):
+-   Campaign Finances Ratio (disburse_ratio):
 
 We take the ratio between harris_disbursement and trump_disbursement. Larger values indicate that Harris campaign financing is greater than Trump campaign financing. Smaller values indicate the inverse.
-
 
 Harris_disbursement and trump_disbursement are continuous variables that measure the total campaign financing expenditures by presidential candidates, aggregated at the state level. They represent the monetary amount spent by presidential candidates Kamala Harris and Donald Trump, within a given state during 2023 and 2024.
 
 The variable is sourced from the Federal Election Commission FEC website, which provides comprehensive data on campaign financing.
 
-
-- Housing Prices (house_price): 
+-   Housing Prices (house_price):
 
 This variable measures an average of typical home value by states in 2023 and smoothed and seasonally adjusted data. It reflects the typical value for homes in the 35th to 65th percentile range.
 
@@ -78,29 +75,27 @@ The units of measurement is U.S. dollars (USD)
 
 The index is calculated as a weighted average of the middle third of homes in a given region. It is NOT the “median home value.”
 
+-   Immigration Feeling Thermometer (mean_border_patrol and mean_border_milit):
 
-- Immigration Feeling Thermometer (mean_border_patrol and mean_border_milit):
+The variables `mean_border_patrol`, `mean_border_milit`, and `mean_border_legal` use data from the ANES 2024 Pilot Study to measure respondent beliefs about border issues. The study asked respondents the following questions:
 
-The variables `mean_border_patrol`, `mean_border_milit`, and `mean_border_legal` use data from the ANES 2024 Pilot Study to measure respondent beliefs about border issues.
-The study asked respondents the following questions:
+```         
+1. Should the number of agents patrolling the US-Mexico border be        increased,decreased, or kept the same? (`border_patrol`). Responses range from “Increased a lot” to “Decreased a lot”.
 
-    1. Should the number of agents patrolling the US-Mexico border be        increased,decreased, or kept the same? (`border_patrol`). Responses range from “Increased a lot” to “Decreased a lot”.
-    
-    2. Would you favor or oppose using the US military to stop people from illegally crossing the border? (`border_milit`). Responses range from “Strongly favor” to“Strongly oppose”.
-    
-    3. Should it be easier, harder, or about the same for immigrants to come to the US legally? (`border_legal`). Responses range from “A lot easier” to “A lot harder.”
-    
-We recoded each response on a 5-point scale ranging from 1 to 5, where lower values represent more generous attitudes toward immigration and higher values represent harsher attitudes. 
+2. Would you favor or oppose using the US military to stop people from illegally crossing the border? (`border_milit`). Responses range from “Strongly favor” to“Strongly oppose”.
+
+3. Should it be easier, harder, or about the same for immigrants to come to the US legally? (`border_legal`). Responses range from “A lot easier” to “A lot harder.”
+```
+
+We recoded each response on a 5-point scale ranging from 1 to 5, where lower values represent more generous attitudes toward immigration and higher values represent harsher attitudes.
 
 We then calculated the average score for each survey question by state (`mean_border_patrol`, `mean_border_milit`, `mean_border_legal`).
 
+-   Religious Evangelicals (Religion_Evan):
 
-- Religious Evangelicals (Religion_Evan):
+This variable captures the ratio of Evangelical Christians aggregated by state. The data was collected from the Association of Religion Archives and captures adherents in 2020.
 
-This  variable captures the ratio of Evangelical Christians aggregated by state. The data was collected from the Association of Religion Archives and captures adherents in 2020.
-
-
-- State Ideology (state_ideology):
+-   State Ideology (state_ideology):
 
 This variable captures the political ideology of each state's U.S. senator. The data was collected and is from 2024. The link to the data source is here.
 
@@ -112,23 +107,17 @@ Coding: Based on 2024 U.S. Senate Representatives
 
 2 - Both Senators are Democrat
 
-- White population (White_population)
+-   White population (White_population)
 
 This variable captures the ratio of the total white population aggregated by state. The data was collected from the US Census Bureau and is from 2020.
 
-
-
 ## Methodology
 
-We utilize ordinary least squares regression modeling with clustered standard errors by state. We specify two models: 
+We utilize ordinary least squares regression modeling with clustered standard errors by state. We specify two models:
 
 Model (1) predicts the vote share for Kamala Harris (Average FiveThirtyEight Polling Data). For the Harris Specification, our independent variables include average feeling thermometer towards the use of military force at the border, affective polarization, disburse ratio, housing prices, religious ideology, state ideology, and ratio of the non-white population.
 
-
 Model (2) predicts the vote share for Donald Trump (Average FiveThirtyEight Polling Data). For the Trump Specification, our independent variables include average feeling thermometer towards border control, affective polarization, disburse ratio, housing prices, religious ideology, state ideology, and ratio of the white population.
-
-
-
 
 ## Results
 
@@ -161,12 +150,12 @@ newdata_harris <- finaldata %>%
       religion_evan = mean(religion_evan, na.rm = TRUE),
       .groups = "drop")
 ```
-  
+
 ```{r}
 
 predict_harris <- predict(harris_milit, newdata = newdata_harris)
 ```
- 
+
 ```{r}
 
 predictions_dem <- newdata_harris %>%
@@ -177,7 +166,6 @@ predictions_dem <- newdata_harris %>%
 
 print(predictions_dem)
 ```
-
 
 ### Trump Specification
 
@@ -197,7 +185,6 @@ coeftest(trump, vcov. = vcovCL(trump, cluster = finaldata$state, type = "HC0"))
 
 ### Predicted Probabilities (Trump)
 
-
 ```{r}
 
 newdata_trump <- finaldata %>%
@@ -213,35 +200,31 @@ newdata_trump <- finaldata %>%
       .groups = "drop") 
 ```
 
-
 ```{r}
 
 predict_trump <- predict(trump, newdata = newdata_trump)
 ```
-
 
 ```{r}
 
 predictions_rep <- newdata_trump %>%
   mutate(predicted_rep = predict_trump)
 ```
-  
+
 ```{r}
 
 print(predictions_rep)
 ```
 
-
-
 ## Predictions
 
 In order to predict the vote share allocated to Harris/Trump, we follow these steps:
 
-- First, we set the variables of interest to their respective mean and median values to generate a separate dataset to forumulate our predictons.
+-   First, we set the variables of interest to their respective mean and median values to generate a separate dataset to forumulate our predictons.
 
-- Second, we utilize this new data to predict the vote share allocated to the democrat and republic candidate by state. We accomplish this using the models specified above. 
+-   Second, we utilize this new data to predict the vote share allocated to the democrat and republic candidate by state. We accomplish this using the models specified above.
 
-- Third, we utilize electoral college data retrieved from: https://www.archives.gov/electoral-college/allocation to allocate electorates by state according to the predicted probabilities for the respective candidates.
+-   Third, we utilize electoral college data retrieved from: <https://www.archives.gov/electoral-college/allocation> to allocate electorates by state according to the predicted probabilities for the respective candidates.
 
 For these purposes, Nebraska and Maine are the only states that allocate their electorates according to a proportional system.
 
@@ -258,8 +241,4 @@ For these purposes, Nebraska and Maine are the only states that allocate their e
     trump_votes <- sum(winner$electoral_college[winner$winner == "Trump"], na.rm = TRUE)
 ```
 
-Harris wins! 
-
-
-
-
+Harris wins!

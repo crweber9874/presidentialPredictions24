@@ -1,0 +1,599 @@
+"","day_id","state","candidate_name","end_date","poll_average"
+"1",41,"Alaska","Donald Trump","9/1/24",53
+"2",52,"Alaska","Donald Trump","9/12/24",47
+"3",41,"Alaska","Kamala Harris","9/1/24",43.1
+"4",52,"Alaska","Kamala Harris","9/12/24",42
+"5",1,"Arizona","Donald Trump","7/23/24",50.05
+"6",2,"Arizona","Donald Trump","7/24/24",46
+"7",6,"Arizona","Donald Trump","7/28/24",45.5
+"8",7,"Arizona","Donald Trump","7/29/24",48
+"9",8,"Arizona","Donald Trump","7/30/24",49
+"10",11,"Arizona","Donald Trump","8/2/24",44
+"11",12,"Arizona","Donald Trump","8/3/24",43
+"12",14,"Arizona","Donald Trump","8/5/24",42.8666666666667
+"13",17,"Arizona","Donald Trump","8/8/24",47.5666666666667
+"14",23,"Arizona","Donald Trump","8/14/24",46
+"15",24,"Arizona","Donald Trump","8/15/24",43.8
+"16",25,"Arizona","Donald Trump","8/16/24",46.55
+"17",29,"Arizona","Donald Trump","8/20/24",47.55
+"18",35,"Arizona","Donald Trump","8/26/24",48
+"19",36,"Arizona","Donald Trump","8/27/24",47.5
+"20",37,"Arizona","Donald Trump","8/28/24",48.6
+"21",38,"Arizona","Donald Trump","8/29/24",49
+"22",40,"Arizona","Donald Trump","8/31/24",48.6
+"23",43,"Arizona","Donald Trump","9/3/24",48.5
+"24",45,"Arizona","Donald Trump","9/5/24",46.55
+"25",48,"Arizona","Donald Trump","9/8/24",49.05
+"26",49,"Arizona","Donald Trump","9/9/24",46.6
+"27",52,"Arizona","Donald Trump","9/12/24",47.1
+"28",58,"Arizona","Donald Trump","9/18/24",48.575
+"29",1,"Arizona","Kamala Harris","7/23/24",43.6
+"30",2,"Arizona","Kamala Harris","7/24/24",43
+"31",6,"Arizona","Kamala Harris","7/28/24",48.5
+"32",7,"Arizona","Kamala Harris","7/29/24",43
+"33",8,"Arizona","Kamala Harris","7/30/24",47
+"34",11,"Arizona","Kamala Harris","8/2/24",47
+"35",12,"Arizona","Kamala Harris","8/3/24",44
+"36",14,"Arizona","Kamala Harris","8/5/24",43.1333333333333
+"37",17,"Arizona","Kamala Harris","8/8/24",45.8333333333333
+"38",23,"Arizona","Kamala Harris","8/14/24",47
+"39",24,"Arizona","Kamala Harris","8/15/24",46.8
+"40",25,"Arizona","Kamala Harris","8/16/24",44.5833333333333
+"41",29,"Arizona","Kamala Harris","8/20/24",46.85
+"42",35,"Arizona","Kamala Harris","8/26/24",49
+"43",36,"Arizona","Kamala Harris","8/27/24",48.5
+"44",37,"Arizona","Kamala Harris","8/28/24",46.25
+"45",38,"Arizona","Kamala Harris","8/29/24",44
+"46",40,"Arizona","Kamala Harris","8/31/24",48.4
+"47",43,"Arizona","Kamala Harris","9/3/24",46.9
+"48",45,"Arizona","Kamala Harris","9/5/24",46.65
+"49",48,"Arizona","Kamala Harris","9/8/24",46.89
+"50",49,"Arizona","Kamala Harris","9/9/24",46
+"51",52,"Arizona","Kamala Harris","9/12/24",45.5
+"52",58,"Arizona","Kamala Harris","9/18/24",48.535
+"53",46,"Arkansas","Donald Trump","9/6/24",55
+"54",46,"Arkansas","Kamala Harris","9/6/24",40
+"55",0,"California","Donald Trump","7/22/24",35
+"56",5,"California","Donald Trump","7/27/24",35
+"57",20,"California","Donald Trump","8/11/24",34
+"58",24,"California","Donald Trump","8/15/24",36.5
+"59",28,"California","Donald Trump","8/19/24",34.7
+"60",35,"California","Donald Trump","8/26/24",35.5
+"61",45,"California","Donald Trump","9/5/24",38
+"62",49,"California","Donald Trump","9/9/24",29
+"63",56,"California","Donald Trump","9/16/24",34
+"64",60,"California","Donald Trump","9/21/24",36
+"65",0,"California","Kamala Harris","7/22/24",54
+"66",5,"California","Kamala Harris","7/27/24",59
+"67",20,"California","Kamala Harris","8/11/24",59
+"68",24,"California","Kamala Harris","8/15/24",57
+"69",28,"California","Kamala Harris","8/19/24",65.3
+"70",35,"California","Kamala Harris","8/26/24",58
+"71",45,"California","Kamala Harris","9/5/24",60.8
+"72",49,"California","Kamala Harris","9/9/24",60
+"73",56,"California","Kamala Harris","9/16/24",59
+"74",60,"California","Kamala Harris","9/21/24",64
+"75",48,"Colorado","Donald Trump","9/8/24",40.08
+"76",58,"Colorado","Donald Trump","9/18/24",42.42
+"77",48,"Colorado","Kamala Harris","9/8/24",54.8
+"78",58,"Colorado","Kamala Harris","9/18/24",52.5
+"79",2,"Florida","Donald Trump","7/24/24",46.6
+"80",5,"Florida","Donald Trump","7/27/24",49
+"81",12,"Florida","Donald Trump","8/3/24",47
+"82",17,"Florida","Donald Trump","8/8/24",52
+"83",20,"Florida","Donald Trump","8/11/24",47.96
+"84",24,"Florida","Donald Trump","8/15/24",51.05
+"85",31,"Florida","Donald Trump","8/22/24",49.5
+"86",35,"Florida","Donald Trump","8/26/24",52
+"87",37,"Florida","Donald Trump","8/28/24",48
+"88",40,"Florida","Donald Trump","8/31/24",53.4
+"89",45,"Florida","Donald Trump","9/5/24",51.1
+"90",48,"Florida","Donald Trump","9/8/24",49.12
+"91",49,"Florida","Donald Trump","9/9/24",50
+"92",58,"Florida","Donald Trump","9/18/24",49.52
+"93",2,"Florida","Kamala Harris","7/24/24",40
+"94",5,"Florida","Kamala Harris","7/27/24",42
+"95",12,"Florida","Kamala Harris","8/3/24",41
+"96",17,"Florida","Kamala Harris","8/8/24",44
+"97",20,"Florida","Kamala Harris","8/11/24",44.76
+"98",24,"Florida","Kamala Harris","8/15/24",44.45
+"99",31,"Florida","Kamala Harris","8/22/24",46
+"100",35,"Florida","Kamala Harris","8/26/24",45
+"101",37,"Florida","Kamala Harris","8/28/24",43
+"102",40,"Florida","Kamala Harris","8/31/24",46.6
+"103",45,"Florida","Kamala Harris","9/5/24",47.6
+"104",48,"Florida","Kamala Harris","9/8/24",47.05
+"105",49,"Florida","Kamala Harris","9/9/24",44
+"106",58,"Florida","Kamala Harris","9/18/24",46.8
+"107",0,"Georgia","Donald Trump","7/22/24",46.9
+"108",1,"Georgia","Donald Trump","7/23/24",48.5
+"109",2,"Georgia","Donald Trump","7/24/24",47
+"110",4,"Georgia","Donald Trump","7/26/24",49.9
+"111",6,"Georgia","Donald Trump","7/28/24",46
+"112",8,"Georgia","Donald Trump","7/30/24",48
+"113",9,"Georgia","Donald Trump","7/31/24",47
+"114",11,"Georgia","Donald Trump","8/2/24",47
+"115",12,"Georgia","Donald Trump","8/3/24",46
+"116",23,"Georgia","Donald Trump","8/14/24",48.75
+"117",24,"Georgia","Donald Trump","8/15/24",46
+"118",25,"Georgia","Donald Trump","8/16/24",48.85
+"119",29,"Georgia","Donald Trump","8/20/24",48.7
+"120",35,"Georgia","Donald Trump","8/26/24",46.6666666666667
+"121",37,"Georgia","Donald Trump","8/28/24",46.5
+"122",38,"Georgia","Donald Trump","8/29/24",47
+"123",40,"Georgia","Donald Trump","8/31/24",47.6
+"124",43,"Georgia","Donald Trump","9/3/24",48.9
+"125",46,"Georgia","Donald Trump","9/6/24",47
+"126",48,"Georgia","Donald Trump","9/8/24",48.5033333333333
+"127",49,"Georgia","Donald Trump","9/9/24",49
+"128",50,"Georgia","Donald Trump","9/10/24",50.2
+"129",55,"Georgia","Donald Trump","9/15/24",46.55
+"130",58,"Georgia","Donald Trump","9/18/24",47.4383333333333
+"131",0,"Georgia","Kamala Harris","7/22/24",45.5
+"132",1,"Georgia","Kamala Harris","7/23/24",46.1
+"133",2,"Georgia","Kamala Harris","7/24/24",42
+"134",4,"Georgia","Kamala Harris","7/26/24",46.4
+"135",6,"Georgia","Kamala Harris","7/28/24",46
+"136",8,"Georgia","Kamala Harris","7/30/24",47.5
+"137",9,"Georgia","Kamala Harris","7/31/24",46
+"138",11,"Georgia","Kamala Harris","8/2/24",47
+"139",12,"Georgia","Kamala Harris","8/3/24",44
+"140",23,"Georgia","Kamala Harris","8/14/24",43.75
+"141",24,"Georgia","Kamala Harris","8/15/24",46
+"142",25,"Georgia","Kamala Harris","8/16/24",46.325
+"143",29,"Georgia","Kamala Harris","8/20/24",47.85
+"144",35,"Georgia","Kamala Harris","8/26/24",48.6666666666667
+"145",37,"Georgia","Kamala Harris","8/28/24",46.05
+"146",38,"Georgia","Kamala Harris","8/29/24",48
+"147",40,"Georgia","Kamala Harris","8/31/24",48.3
+"148",43,"Georgia","Kamala Harris","9/3/24",48.3
+"149",46,"Georgia","Kamala Harris","9/6/24",44.5
+"150",48,"Georgia","Kamala Harris","9/8/24",46.4633333333333
+"151",49,"Georgia","Kamala Harris","9/9/24",47
+"152",50,"Georgia","Kamala Harris","9/10/24",49.8
+"153",55,"Georgia","Kamala Harris","9/15/24",44.45
+"154",58,"Georgia","Kamala Harris","9/18/24",47.53
+"155",38,"Illinois","Donald Trump","8/29/24",42.2
+"156",38,"Illinois","Kamala Harris","8/29/24",57.8
+"157",42,"Indiana","Donald Trump","9/2/24",52
+"158",53,"Indiana","Donald Trump","9/13/24",57.9
+"159",42,"Indiana","Kamala Harris","9/2/24",42
+"160",53,"Indiana","Kamala Harris","9/13/24",40.7
+"161",51,"Iowa","Donald Trump","9/11/24",47
+"162",51,"Iowa","Kamala Harris","9/11/24",43
+"163",3,"Maine","Donald Trump","7/25/24",42.5
+"164",28,"Maine","Donald Trump","8/19/24",39.5
+"165",55,"Maine","Donald Trump","9/15/24",41
+"166",3,"Maine","Kamala Harris","7/25/24",51
+"167",28,"Maine","Kamala Harris","8/19/24",56.5
+"168",55,"Maine","Kamala Harris","9/15/24",50
+"169",3,"Maine CD-1","Donald Trump","7/25/24",37.5
+"170",28,"Maine CD-1","Donald Trump","8/19/24",34.5
+"171",55,"Maine CD-1","Donald Trump","9/15/24",32
+"172",3,"Maine CD-1","Kamala Harris","7/25/24",58
+"173",28,"Maine CD-1","Kamala Harris","8/19/24",63
+"174",55,"Maine CD-1","Kamala Harris","9/15/24",58
+"175",3,"Maine CD-2","Donald Trump","7/25/24",47.5
+"176",28,"Maine CD-2","Donald Trump","8/19/24",45.5
+"177",55,"Maine CD-2","Donald Trump","9/15/24",49
+"178",3,"Maine CD-2","Kamala Harris","7/25/24",44.5
+"179",28,"Maine CD-2","Kamala Harris","8/19/24",50.5
+"180",55,"Maine CD-2","Kamala Harris","9/15/24",42
+"181",29,"Maryland","Donald Trump","8/20/24",30.5
+"182",39,"Maryland","Donald Trump","8/30/24",35
+"183",48,"Maryland","Donald Trump","9/8/24",34.13
+"184",53,"Maryland","Donald Trump","9/13/24",33.3
+"185",57,"Maryland","Donald Trump","9/17/24",33
+"186",58,"Maryland","Donald Trump","9/18/24",33.04
+"187",29,"Maryland","Kamala Harris","8/20/24",61.5
+"188",39,"Maryland","Kamala Harris","8/30/24",56
+"189",48,"Maryland","Kamala Harris","9/8/24",62.23
+"190",53,"Maryland","Kamala Harris","9/13/24",65.3
+"191",57,"Maryland","Kamala Harris","9/17/24",64
+"192",58,"Maryland","Kamala Harris","9/18/24",61.41
+"193",56,"Massachusetts","Donald Trump","9/16/24",31
+"194",56,"Massachusetts","Kamala Harris","9/16/24",62
+"195",1,"Michigan","Donald Trump","7/23/24",47.5
+"196",2,"Michigan","Donald Trump","7/24/24",44.55
+"197",4,"Michigan","Donald Trump","7/26/24",49
+"198",6,"Michigan","Donald Trump","7/28/24",40.5
+"199",7,"Michigan","Donald Trump","7/29/24",45
+"200",11,"Michigan","Donald Trump","8/2/24",45
+"201",12,"Michigan","Donald Trump","8/3/24",42
+"202",17,"Michigan","Donald Trump","8/8/24",45.2857142857143
+"203",20,"Michigan","Donald Trump","8/11/24",44
+"204",24,"Michigan","Donald Trump","8/15/24",45
+"205",25,"Michigan","Donald Trump","8/16/24",44.175
+"206",30,"Michigan","Donald Trump","8/21/24",45.5
+"207",31,"Michigan","Donald Trump","8/22/24",44.2
+"208",32,"Michigan","Donald Trump","8/23/24",44.75
+"209",35,"Michigan","Donald Trump","8/26/24",46.5714285714286
+"210",37,"Michigan","Donald Trump","8/28/24",46.55
+"211",38,"Michigan","Donald Trump","8/29/24",43
+"212",39,"Michigan","Donald Trump","8/30/24",47
+"213",41,"Michigan","Donald Trump","9/1/24",46
+"214",43,"Michigan","Donald Trump","9/3/24",47.6
+"215",46,"Michigan","Donald Trump","9/6/24",48
+"216",48,"Michigan","Donald Trump","9/8/24",46.12
+"217",49,"Michigan","Donald Trump","9/9/24",45
+"218",51,"Michigan","Donald Trump","9/11/24",47
+"219",52,"Michigan","Donald Trump","9/12/24",48.6
+"220",56,"Michigan","Donald Trump","9/16/24",45.5
+"221",57,"Michigan","Donald Trump","9/17/24",47
+"222",58,"Michigan","Donald Trump","9/18/24",46.78
+"223",1,"Michigan","Kamala Harris","7/23/24",46.45
+"224",2,"Michigan","Kamala Harris","7/24/24",43.65
+"225",4,"Michigan","Kamala Harris","7/26/24",46
+"226",6,"Michigan","Kamala Harris","7/28/24",52
+"227",7,"Michigan","Kamala Harris","7/29/24",45
+"228",11,"Michigan","Kamala Harris","8/2/24",47.5
+"229",12,"Michigan","Kamala Harris","8/3/24",41
+"230",17,"Michigan","Kamala Harris","8/8/24",46.7142857142857
+"231",20,"Michigan","Kamala Harris","8/11/24",46.25
+"232",24,"Michigan","Kamala Harris","8/15/24",44
+"233",25,"Michigan","Kamala Harris","8/16/24",50.975
+"234",30,"Michigan","Kamala Harris","8/21/24",45
+"235",31,"Michigan","Kamala Harris","8/22/24",46.325
+"236",32,"Michigan","Kamala Harris","8/23/24",45.5
+"237",35,"Michigan","Kamala Harris","8/26/24",47.5714285714286
+"238",37,"Michigan","Kamala Harris","8/28/24",47.95
+"239",38,"Michigan","Kamala Harris","8/29/24",48
+"240",39,"Michigan","Kamala Harris","8/30/24",46.6
+"241",41,"Michigan","Kamala Harris","9/1/24",47
+"242",43,"Michigan","Kamala Harris","9/3/24",48.4
+"243",46,"Michigan","Kamala Harris","9/6/24",48.5
+"244",48,"Michigan","Kamala Harris","9/8/24",49.19
+"245",49,"Michigan","Kamala Harris","9/9/24",48
+"246",51,"Michigan","Kamala Harris","9/11/24",47.5
+"247",52,"Michigan","Kamala Harris","9/12/24",48
+"248",56,"Michigan","Kamala Harris","9/16/24",50.5
+"249",57,"Michigan","Kamala Harris","9/17/24",51
+"250",58,"Michigan","Kamala Harris","9/18/24",50.985
+"251",2,"Minnesota","Donald Trump","7/24/24",43.8
+"252",3,"Minnesota","Donald Trump","7/25/24",40
+"253",12,"Minnesota","Donald Trump","8/3/24",41
+"254",24,"Minnesota","Donald Trump","8/15/24",40
+"255",37,"Minnesota","Donald Trump","8/28/24",42
+"256",38,"Minnesota","Donald Trump","8/29/24",43
+"257",48,"Minnesota","Donald Trump","9/8/24",44.44
+"258",49,"Minnesota","Donald Trump","9/9/24",44
+"259",58,"Minnesota","Donald Trump","9/18/24",43
+"260",2,"Minnesota","Kamala Harris","7/24/24",47.6666666666667
+"261",3,"Minnesota","Kamala Harris","7/25/24",50
+"262",12,"Minnesota","Kamala Harris","8/3/24",46
+"263",24,"Minnesota","Kamala Harris","8/15/24",47
+"264",37,"Minnesota","Kamala Harris","8/28/24",51
+"265",38,"Minnesota","Kamala Harris","8/29/24",48
+"266",48,"Minnesota","Kamala Harris","9/8/24",49.86
+"267",49,"Minnesota","Kamala Harris","9/9/24",51
+"268",58,"Minnesota","Kamala Harris","9/18/24",49.56
+"269",25,"Missouri","Donald Trump","8/16/24",54
+"270",31,"Missouri","Donald Trump","8/22/24",58.7
+"271",52,"Missouri","Donald Trump","9/12/24",55
+"272",53,"Missouri","Donald Trump","9/13/24",52.6
+"273",25,"Missouri","Kamala Harris","8/16/24",41
+"274",31,"Missouri","Kamala Harris","8/22/24",41.3
+"275",52,"Missouri","Kamala Harris","9/12/24",44
+"276",53,"Missouri","Kamala Harris","9/13/24",42.2
+"277",15,"Montana","Donald Trump","8/6/24",55.5
+"278",21,"Montana","Donald Trump","8/12/24",51.7
+"279",23,"Montana","Donald Trump","8/14/24",57
+"280",38,"Montana","Donald Trump","8/29/24",56
+"281",15,"Montana","Kamala Harris","8/6/24",40.75
+"282",21,"Montana","Kamala Harris","8/12/24",37.8
+"283",23,"Montana","Kamala Harris","8/14/24",39
+"284",38,"Montana","Kamala Harris","8/29/24",41
+"285",36,"Nebraska","Donald Trump","8/27/24",54
+"286",38,"Nebraska","Donald Trump","8/29/24",54
+"287",36,"Nebraska","Kamala Harris","8/27/24",37
+"288",38,"Nebraska","Kamala Harris","8/29/24",37
+"289",26,"Nebraska CD-2","Donald Trump","8/17/24",42
+"290",36,"Nebraska CD-2","Donald Trump","8/27/24",42
+"291",26,"Nebraska CD-2","Kamala Harris","8/17/24",48.5
+"292",36,"Nebraska CD-2","Kamala Harris","8/27/24",47
+"293",2,"Nevada","Donald Trump","7/24/24",45
+"294",6,"Nevada","Donald Trump","7/28/24",44
+"295",7,"Nevada","Donald Trump","7/29/24",46
+"296",11,"Nevada","Donald Trump","8/2/24",47.5
+"297",12,"Nevada","Donald Trump","8/3/24",40
+"298",17,"Nevada","Donald Trump","8/8/24",48.2
+"299",23,"Nevada","Donald Trump","8/14/24",42
+"300",24,"Nevada","Donald Trump","8/15/24",46
+"301",25,"Nevada","Donald Trump","8/16/24",41.675
+"302",35,"Nevada","Donald Trump","8/26/24",46
+"303",37,"Nevada","Donald Trump","8/28/24",47.9
+"304",38,"Nevada","Donald Trump","8/29/24",47
+"305",40,"Nevada","Donald Trump","8/31/24",47.9
+"306",43,"Nevada","Donald Trump","9/3/24",47
+"307",48,"Nevada","Donald Trump","9/8/24",48.45
+"308",49,"Nevada","Donald Trump","9/9/24",46
+"309",53,"Nevada","Donald Trump","9/13/24",43.5
+"310",58,"Nevada","Donald Trump","9/18/24",47.765
+"311",2,"Nevada","Kamala Harris","7/24/24",43
+"312",6,"Nevada","Kamala Harris","7/28/24",45
+"313",7,"Nevada","Kamala Harris","7/29/24",45
+"314",11,"Nevada","Kamala Harris","8/2/24",43.5
+"315",12,"Nevada","Kamala Harris","8/3/24",40
+"316",17,"Nevada","Kamala Harris","8/8/24",44.8
+"317",23,"Nevada","Kamala Harris","8/14/24",48
+"318",24,"Nevada","Kamala Harris","8/15/24",44.2
+"319",25,"Nevada","Kamala Harris","8/16/24",49.875
+"320",35,"Nevada","Kamala Harris","8/26/24",48.8333333333333
+"321",37,"Nevada","Kamala Harris","8/28/24",48.2
+"322",38,"Nevada","Kamala Harris","8/29/24",48
+"323",40,"Nevada","Kamala Harris","8/31/24",46.5
+"324",43,"Nevada","Kamala Harris","9/3/24",46.8
+"325",48,"Nevada","Kamala Harris","9/8/24",47.58
+"326",49,"Nevada","Kamala Harris","9/9/24",45
+"327",53,"Nevada","Kamala Harris","9/13/24",45.3
+"328",58,"Nevada","Kamala Harris","9/18/24",49.835
+"329",3,"New Hampshire","Donald Trump","7/25/24",44.3333333333333
+"330",6,"New Hampshire","Donald Trump","7/28/24",44.5
+"331",23,"New Hampshire","Donald Trump","8/14/24",44
+"332",28,"New Hampshire","Donald Trump","8/19/24",45
+"333",52,"New Hampshire","Donald Trump","9/12/24",43
+"334",56,"New Hampshire","Donald Trump","9/16/24",43
+"335",3,"New Hampshire","Kamala Harris","7/25/24",50.6666666666667
+"336",6,"New Hampshire","Kamala Harris","7/28/24",50.05
+"337",23,"New Hampshire","Kamala Harris","8/14/24",51
+"338",28,"New Hampshire","Kamala Harris","8/19/24",51
+"339",52,"New Hampshire","Kamala Harris","9/12/24",51
+"340",56,"New Hampshire","Kamala Harris","9/16/24",54
+"341",12,"New Mexico","Donald Trump","8/3/24",37
+"342",24,"New Mexico","Donald Trump","8/15/24",41
+"343",31,"New Mexico","Donald Trump","8/22/24",43.3
+"344",37,"New Mexico","Donald Trump","8/28/24",40
+"345",49,"New Mexico","Donald Trump","9/9/24",44
+"346",53,"New Mexico","Donald Trump","9/13/24",39
+"347",12,"New Mexico","Kamala Harris","8/3/24",44
+"348",24,"New Mexico","Kamala Harris","8/15/24",47
+"349",31,"New Mexico","Kamala Harris","8/22/24",52.3
+"350",37,"New Mexico","Kamala Harris","8/28/24",47
+"351",49,"New Mexico","Kamala Harris","9/9/24",49
+"352",53,"New Mexico","Kamala Harris","9/13/24",49
+"353",10,"New York","Donald Trump","8/1/24",38
+"354",30,"New York","Donald Trump","8/21/24",41.7
+"355",56,"New York","Donald Trump","9/16/24",41
+"356",10,"New York","Kamala Harris","8/1/24",51
+"357",30,"New York","Kamala Harris","8/21/24",58.3
+"358",56,"New York","Kamala Harris","9/16/24",53.5
+"359",2,"North Carolina","Donald Trump","7/24/24",46
+"360",6,"North Carolina","Donald Trump","7/28/24",46.5
+"361",11,"North Carolina","Donald Trump","8/2/24",45.5
+"362",12,"North Carolina","Donald Trump","8/3/24",44
+"363",14,"North Carolina","Donald Trump","8/5/24",47.2
+"364",17,"North Carolina","Donald Trump","8/8/24",47.6333333333333
+"365",18,"North Carolina","Donald Trump","8/9/24",46
+"366",23,"North Carolina","Donald Trump","8/14/24",44.75
+"367",24,"North Carolina","Donald Trump","8/15/24",47
+"368",25,"North Carolina","Donald Trump","8/16/24",45.7
+"369",29,"North Carolina","Donald Trump","8/20/24",46.25
+"370",30,"North Carolina","Donald Trump","8/21/24",46
+"371",35,"North Carolina","Donald Trump","8/26/24",48.1666666666667
+"372",36,"North Carolina","Donald Trump","8/27/24",50
+"373",37,"North Carolina","Donald Trump","8/28/24",47.5
+"374",40,"North Carolina","Donald Trump","8/31/24",49.6
+"375",43,"North Carolina","Donald Trump","9/3/24",50
+"376",46,"North Carolina","Donald Trump","9/6/24",47.5
+"377",47,"North Carolina","Donald Trump","9/7/24",46
+"378",48,"North Carolina","Donald Trump","9/8/24",46.94
+"379",49,"North Carolina","Donald Trump","9/9/24",44
+"380",52,"North Carolina","Donald Trump","9/12/24",48.4
+"381",53,"North Carolina","Donald Trump","9/13/24",48.9
+"382",56,"North Carolina","Donald Trump","9/16/24",45.6
+"383",58,"North Carolina","Donald Trump","9/18/24",48.32
+"384",2,"North Carolina","Kamala Harris","7/24/24",43
+"385",6,"North Carolina","Kamala Harris","7/28/24",45
+"386",11,"North Carolina","Kamala Harris","8/2/24",47
+"387",12,"North Carolina","Kamala Harris","8/3/24",41
+"388",14,"North Carolina","Kamala Harris","8/5/24",44.1
+"389",17,"North Carolina","Kamala Harris","8/8/24",45.7333333333333
+"390",18,"North Carolina","Kamala Harris","8/9/24",46
+"391",23,"North Carolina","Kamala Harris","8/14/24",47.25
+"392",24,"North Carolina","Kamala Harris","8/15/24",44
+"393",25,"North Carolina","Kamala Harris","8/16/24",47.7
+"394",29,"North Carolina","Kamala Harris","8/20/24",46.85
+"395",30,"North Carolina","Kamala Harris","8/21/24",46.5
+"396",35,"North Carolina","Kamala Harris","8/26/24",48.3333333333333
+"397",36,"North Carolina","Kamala Harris","8/27/24",46
+"398",37,"North Carolina","Kamala Harris","8/28/24",46.6333333333333
+"399",40,"North Carolina","Kamala Harris","8/31/24",49.2
+"400",43,"North Carolina","Kamala Harris","9/3/24",47.5
+"401",46,"North Carolina","Kamala Harris","9/6/24",46.5
+"402",47,"North Carolina","Kamala Harris","9/7/24",49
+"403",48,"North Carolina","Kamala Harris","9/8/24",49.0733333333333
+"404",49,"North Carolina","Kamala Harris","9/9/24",45
+"405",52,"North Carolina","Kamala Harris","9/12/24",46.4
+"406",53,"North Carolina","Kamala Harris","9/13/24",45.9
+"407",56,"North Carolina","Kamala Harris","9/16/24",45.3
+"408",58,"North Carolina","Kamala Harris","9/18/24",47.9766666666667
+"409",6,"Ohio","Donald Trump","7/28/24",50
+"410",31,"Ohio","Donald Trump","8/22/24",56.2
+"411",41,"Ohio","Donald Trump","9/1/24",52
+"412",45,"Ohio","Donald Trump","9/5/24",54.3
+"413",48,"Ohio","Donald Trump","9/8/24",51.92
+"414",58,"Ohio","Donald Trump","9/18/24",52.16
+"415",6,"Ohio","Kamala Harris","7/28/24",40.5
+"416",31,"Ohio","Kamala Harris","8/22/24",43.8
+"417",41,"Ohio","Kamala Harris","9/1/24",43
+"418",45,"Ohio","Kamala Harris","9/5/24",44.7
+"419",48,"Ohio","Kamala Harris","9/8/24",43.58
+"420",58,"Ohio","Kamala Harris","9/18/24",43.02
+"421",40,"Oklahoma","Donald Trump","8/31/24",56
+"422",40,"Oklahoma","Kamala Harris","8/31/24",39.9
+"423",4,"Oregon","Donald Trump","7/26/24",42
+"424",4,"Oregon","Kamala Harris","7/26/24",47
+"425",1,"Pennsylvania","Donald Trump","7/23/24",46.84
+"426",2,"Pennsylvania","Donald Trump","7/24/24",46.2
+"427",3,"Pennsylvania","Donald Trump","7/25/24",45.5
+"428",6,"Pennsylvania","Donald Trump","7/28/24",46.65
+"429",7,"Pennsylvania","Donald Trump","7/29/24",45
+"430",8,"Pennsylvania","Donald Trump","7/30/24",47
+"431",10,"Pennsylvania","Donald Trump","8/1/24",46.5
+"432",11,"Pennsylvania","Donald Trump","8/2/24",45.5
+"433",12,"Pennsylvania","Donald Trump","8/3/24",46
+"434",17,"Pennsylvania","Donald Trump","8/8/24",46.6333333333333
+"435",18,"Pennsylvania","Donald Trump","8/9/24",44.75
+"436",20,"Pennsylvania","Donald Trump","8/11/24",43
+"437",21,"Pennsylvania","Donald Trump","8/12/24",46
+"438",23,"Pennsylvania","Donald Trump","8/14/24",49.05
+"439",24,"Pennsylvania","Donald Trump","8/15/24",45.1333333333333
+"440",25,"Pennsylvania","Donald Trump","8/16/24",47.425
+"441",28,"Pennsylvania","Donald Trump","8/19/24",46.6
+"442",29,"Pennsylvania","Donald Trump","8/20/24",46.1
+"443",30,"Pennsylvania","Donald Trump","8/21/24",45
+"444",31,"Pennsylvania","Donald Trump","8/22/24",48.9
+"445",32,"Pennsylvania","Donald Trump","8/23/24",45.5625
+"446",35,"Pennsylvania","Donald Trump","8/26/24",46.4
+"447",37,"Pennsylvania","Donald Trump","8/28/24",47.2
+"448",38,"Pennsylvania","Donald Trump","8/29/24",48
+"449",39,"Pennsylvania","Donald Trump","8/30/24",47
+"450",43,"Pennsylvania","Donald Trump","9/3/24",49
+"451",46,"Pennsylvania","Donald Trump","9/6/24",49
+"452",48,"Pennsylvania","Donald Trump","9/8/24",46.34
+"453",49,"Pennsylvania","Donald Trump","9/9/24",45
+"454",54,"Pennsylvania","Donald Trump","9/14/24",45.6
+"455",55,"Pennsylvania","Donald Trump","9/15/24",47.9
+"456",56,"Pennsylvania","Donald Trump","9/16/24",46
+"457",57,"Pennsylvania","Donald Trump","9/17/24",48.5
+"458",58,"Pennsylvania","Donald Trump","9/18/24",47.25
+"459",1,"Pennsylvania","Kamala Harris","7/23/24",46.0666666666667
+"460",2,"Pennsylvania","Kamala Harris","7/24/24",45.3333333333333
+"461",3,"Pennsylvania","Kamala Harris","7/25/24",46
+"462",6,"Pennsylvania","Kamala Harris","7/28/24",45.85
+"463",7,"Pennsylvania","Kamala Harris","7/29/24",48
+"464",8,"Pennsylvania","Kamala Harris","7/30/24",48.5
+"465",10,"Pennsylvania","Kamala Harris","8/1/24",46.5
+"466",11,"Pennsylvania","Kamala Harris","8/2/24",48.5
+"467",12,"Pennsylvania","Kamala Harris","8/3/24",44
+"468",17,"Pennsylvania","Kamala Harris","8/8/24",44.8
+"469",18,"Pennsylvania","Kamala Harris","8/9/24",47.5
+"470",20,"Pennsylvania","Kamala Harris","8/11/24",46.6666666666667
+"471",21,"Pennsylvania","Kamala Harris","8/12/24",49
+"472",23,"Pennsylvania","Kamala Harris","8/14/24",48.05
+"473",24,"Pennsylvania","Kamala Harris","8/15/24",45.7333333333333
+"474",25,"Pennsylvania","Kamala Harris","8/16/24",48.6
+"475",28,"Pennsylvania","Kamala Harris","8/19/24",46
+"476",29,"Pennsylvania","Kamala Harris","8/20/24",47.25
+"477",30,"Pennsylvania","Kamala Harris","8/21/24",44.5
+"478",31,"Pennsylvania","Kamala Harris","8/22/24",51.1
+"479",32,"Pennsylvania","Kamala Harris","8/23/24",45.8333333333333
+"480",35,"Pennsylvania","Kamala Harris","8/26/24",50
+"481",37,"Pennsylvania","Kamala Harris","8/28/24",47.7
+"482",38,"Pennsylvania","Kamala Harris","8/29/24",47.6666666666667
+"483",39,"Pennsylvania","Kamala Harris","8/30/24",44.9
+"484",43,"Pennsylvania","Kamala Harris","9/3/24",47.9
+"485",46,"Pennsylvania","Kamala Harris","9/6/24",48
+"486",48,"Pennsylvania","Kamala Harris","9/8/24",49.34
+"487",49,"Pennsylvania","Kamala Harris","9/9/24",45
+"488",54,"Pennsylvania","Kamala Harris","9/14/24",48.6
+"489",55,"Pennsylvania","Kamala Harris","9/15/24",48.7
+"490",56,"Pennsylvania","Kamala Harris","9/16/24",49.375
+"491",57,"Pennsylvania","Kamala Harris","9/17/24",49
+"492",58,"Pennsylvania","Kamala Harris","9/18/24",50.085
+"493",56,"Rhode Island","Donald Trump","9/16/24",38
+"494",56,"Rhode Island","Kamala Harris","9/16/24",58
+"495",38,"Tennessee","Donald Trump","8/29/24",63.1
+"496",38,"Tennessee","Kamala Harris","8/29/24",36.9
+"497",22,"Texas","Donald Trump","8/13/24",53.3
+"498",25,"Texas","Donald Trump","8/16/24",49.5
+"499",31,"Texas","Donald Trump","8/22/24",47
+"500",38,"Texas","Donald Trump","8/29/24",51
+"501",40,"Texas","Donald Trump","8/31/24",50.8333333333333
+"502",45,"Texas","Donald Trump","9/5/24",50.9
+"503",48,"Texas","Donald Trump","9/8/24",51.75
+"504",58,"Texas","Donald Trump","9/18/24",49.58
+"505",22,"Texas","Kamala Harris","8/13/24",46.7
+"506",25,"Texas","Kamala Harris","8/16/24",44.6
+"507",31,"Texas","Kamala Harris","8/22/24",43
+"508",38,"Texas","Kamala Harris","8/29/24",43
+"509",40,"Texas","Kamala Harris","8/31/24",44.5
+"510",45,"Texas","Kamala Harris","9/5/24",48
+"511",48,"Texas","Kamala Harris","9/8/24",43.43
+"512",58,"Texas","Kamala Harris","9/18/24",45.77
+"513",18,"Utah","Donald Trump","8/9/24",55.5
+"514",18,"Utah","Kamala Harris","8/9/24",26.5
+"515",28,"Vermont","Donald Trump","8/19/24",28
+"516",28,"Vermont","Kamala Harris","8/19/24",68.5
+"517",25,"Virginia","Donald Trump","8/16/24",43
+"518",31,"Virginia","Donald Trump","8/22/24",45.8
+"519",46,"Virginia","Donald Trump","9/6/24",35.85
+"520",48,"Virginia","Donald Trump","9/8/24",42.448
+"521",49,"Virginia","Donald Trump","9/9/24",45.25
+"522",57,"Virginia","Donald Trump","9/17/24",44.8
+"523",58,"Virginia","Donald Trump","9/18/24",44.44
+"524",25,"Virginia","Kamala Harris","8/16/24",46
+"525",31,"Virginia","Kamala Harris","8/22/24",48.6
+"526",46,"Virginia","Kamala Harris","9/6/24",47.7
+"527",48,"Virginia","Kamala Harris","9/8/24",50.594
+"528",49,"Virginia","Kamala Harris","9/9/24",46
+"529",57,"Virginia","Kamala Harris","9/17/24",55.2
+"530",58,"Virginia","Kamala Harris","9/18/24",50.76
+"531",3,"Washington","Donald Trump","7/25/24",38
+"532",46,"Washington","Donald Trump","9/6/24",32
+"533",3,"Washington","Kamala Harris","7/25/24",52
+"534",46,"Washington","Kamala Harris","9/6/24",53
+"535",36,"West Virginia","Donald Trump","8/27/24",61
+"536",36,"West Virginia","Kamala Harris","8/27/24",34
+"537",1,"Wisconsin","Donald Trump","7/23/24",47.15
+"538",2,"Wisconsin","Donald Trump","7/24/24",47.8
+"539",6,"Wisconsin","Donald Trump","7/28/24",46
+"540",7,"Wisconsin","Donald Trump","7/29/24",46
+"541",10,"Wisconsin","Donald Trump","8/1/24",46.75
+"542",11,"Wisconsin","Donald Trump","8/2/24",44.5
+"543",12,"Wisconsin","Donald Trump","8/3/24",43
+"544",14,"Wisconsin","Donald Trump","8/5/24",45
+"545",16,"Wisconsin","Donald Trump","8/7/24",48.6
+"546",17,"Wisconsin","Donald Trump","8/8/24",45
+"547",20,"Wisconsin","Donald Trump","8/11/24",41
+"548",23,"Wisconsin","Donald Trump","8/14/24",45.25
+"549",24,"Wisconsin","Donald Trump","8/15/24",45.45
+"550",25,"Wisconsin","Donald Trump","8/16/24",44.125
+"551",29,"Wisconsin","Donald Trump","8/20/24",43.8
+"552",30,"Wisconsin","Donald Trump","8/21/24",44
+"553",32,"Wisconsin","Donald Trump","8/23/24",43.25
+"554",35,"Wisconsin","Donald Trump","8/26/24",44.6
+"555",37,"Wisconsin","Donald Trump","8/28/24",46.9
+"556",38,"Wisconsin","Donald Trump","8/29/24",44
+"557",39,"Wisconsin","Donald Trump","8/30/24",47.3
+"558",43,"Wisconsin","Donald Trump","9/3/24",47.7
+"559",45,"Wisconsin","Donald Trump","9/5/24",45.5
+"560",46,"Wisconsin","Donald Trump","9/6/24",48
+"561",48,"Wisconsin","Donald Trump","9/8/24",46.19
+"562",49,"Wisconsin","Donald Trump","9/9/24",46
+"563",52,"Wisconsin","Donald Trump","9/12/24",46.6
+"564",54,"Wisconsin","Donald Trump","9/14/24",46.5
+"565",56,"Wisconsin","Donald Trump","9/16/24",47.5
+"566",57,"Wisconsin","Donald Trump","9/17/24",48
+"567",58,"Wisconsin","Donald Trump","9/18/24",47.3
+"568",1,"Wisconsin","Kamala Harris","7/23/24",48
+"569",2,"Wisconsin","Kamala Harris","7/24/24",46.3333333333333
+"570",6,"Wisconsin","Kamala Harris","7/28/24",46.5
+"571",7,"Wisconsin","Kamala Harris","7/29/24",48
+"572",10,"Wisconsin","Kamala Harris","8/1/24",47.5
+"573",11,"Wisconsin","Kamala Harris","8/2/24",48.5
+"574",12,"Wisconsin","Kamala Harris","8/3/24",43
+"575",14,"Wisconsin","Kamala Harris","8/5/24",48
+"576",16,"Wisconsin","Kamala Harris","8/7/24",48.3
+"577",17,"Wisconsin","Kamala Harris","8/8/24",48.5
+"578",20,"Wisconsin","Kamala Harris","8/11/24",50
+"579",23,"Wisconsin","Kamala Harris","8/14/24",46.425
+"580",24,"Wisconsin","Kamala Harris","8/15/24",47.9
+"581",25,"Wisconsin","Kamala Harris","8/16/24",50.525
+"582",29,"Wisconsin","Kamala Harris","8/20/24",47.1
+"583",30,"Wisconsin","Kamala Harris","8/21/24",48
+"584",32,"Wisconsin","Kamala Harris","8/23/24",48.25
+"585",35,"Wisconsin","Kamala Harris","8/26/24",51
+"586",37,"Wisconsin","Kamala Harris","8/28/24",48.55
+"587",38,"Wisconsin","Kamala Harris","8/29/24",50
+"588",39,"Wisconsin","Kamala Harris","8/30/24",46.2
+"589",43,"Wisconsin","Kamala Harris","9/3/24",47.9
+"590",45,"Wisconsin","Kamala Harris","9/5/24",49.75
+"591",46,"Wisconsin","Kamala Harris","9/6/24",49
+"592",48,"Wisconsin","Kamala Harris","9/8/24",49.48
+"593",49,"Wisconsin","Kamala Harris","9/9/24",49
+"594",52,"Wisconsin","Kamala Harris","9/12/24",49
+"595",54,"Wisconsin","Kamala Harris","9/14/24",48.5
+"596",56,"Wisconsin","Kamala Harris","9/16/24",48.5
+"597",57,"Wisconsin","Kamala Harris","9/17/24",50
+"598",58,"Wisconsin","Kamala Harris","9/18/24",49.46
